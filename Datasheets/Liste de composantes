@@ -5,6 +5,13 @@ Temp:      MAX6612MXK
 Accel:     ADXL382-2BCCZ-RL7
 GPS:       L76LM33
 
+
+BNO055:
+  Communication I2C
+  Consumption 12.3 mA ou 0.04 mA suspended
+  Alimentation 3.3V
+  4 Pins min
+
 MS583702BA01-50:
   Communication I2C ou SPI
   4 pins (vcc, gnd et i2c)

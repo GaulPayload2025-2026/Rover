@@ -1,0 +1,10 @@
+Gyroscope: BNO055
+Altimetre: MS583702BA01-50 
+Imu:       BNO055
+Temp:      MAX6612MXK
+Accel:     ADXL382-2BCCZ-RL7
+GPS:       L76LM33
+
+
+
+

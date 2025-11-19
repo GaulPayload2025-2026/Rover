@@ -1,0 +1,25 @@
+MS5837-02BA01 
+
+Protocole de communication:  I²C ou SPI
+
+4 broches (pins)
+
+pin
+Nom
+Fonction
+1
+GND
+Masse / Terre
+2
+VDD
+Alimentation (power)
+3
+SCL
+Horloge I²C (Serial Clock)
+4
+SDA
+Données I²C (Serial Data)
+
+
+voltage (VDD = 1.5 V…3.6 V)
+

@@ -4,6 +4,7 @@ Imu:       BNO055
 Temp:      MAX6612MXK
 Accel:     ADXL382-2BCCZ-RL7
 GPS:       L76LM33
+SD:
 
 
 BNO055:
@@ -27,6 +28,9 @@ ADXL382-2BCCZ-RL7:
   520 µA (High Performance), 33 µA (Ultra-Low Power) &6.8 µA (Standby) Il y a du motion detected Wake-Up
   2 Pins interrupt et 4 pour SPI
   3.3 V
+
+SD:
+  4 pins (SPI)
   
   
 

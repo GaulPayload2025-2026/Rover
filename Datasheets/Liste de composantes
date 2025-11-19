@@ -7,4 +7,12 @@ GPS:       L76LM33
 
 
 
+MAX6612MXK:
+  ADC
+  Consumption de 35µA max
+
+
+
+
+
 

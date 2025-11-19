@@ -33,6 +33,12 @@ L76LM33:
   Communication UART 2 pins
 SD:
   4 pins (SPI)
+
+Conclusion: 
+  2 pour I2c
+  2 Pour SPI
+  1 UART
+  20 pins minimales
   
   
 

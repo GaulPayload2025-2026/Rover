@@ -29,6 +29,8 @@ ADXL382-2BCCZ-RL7:
   2 Pins interrupt et 4 pour SPI
   3.3 V
 
+L76LM33:
+  Communication UART 2 pins
 SD:
   4 pins (SPI)
   

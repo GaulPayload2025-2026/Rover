@@ -5,6 +5,10 @@ Temp:      MAX6612MXK
 Accel:     ADXL382-2BCCZ-RL7
 GPS:       L76LM33
 
+MS583702BA01-50:
+  Communication I2C ou SPI
+  4 pins (vcc, gnd et i2c)
+  Alimentation 3.3 V
 
 MAX6612MXK:
   ADC

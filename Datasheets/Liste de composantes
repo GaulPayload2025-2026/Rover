@@ -1,11 +1,13 @@
 Gyroscope: BNO055
-Altimetre: MS583702BA01-50 
+Altimetre: MS583702BA01-50 (Aurélie)
 Imu:       BNO055
 Temp:      MAX6612MXK (Fernando)
 Accel:     ADXL382-2BCCZ-RL7 (Alex)
 GPS:       L76LM33
 SD:                      (Aurelie)
-STM32: STM32F410RBT6
+STM32:     STM32F410RBT6
+Caméra:    RunCam Split 4 V2
+Lidar:     TF-Luna
 
 
 BNO055:

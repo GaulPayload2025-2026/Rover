@@ -1,10 +1,10 @@
 Gyroscope: BNO055
 Altimetre: MS583702BA01-50 
 Imu:       BNO055
-Temp:      MAX6612MXK
-Accel:     ADXL382-2BCCZ-RL7
+Temp:      MAX6612MXK (Fernando)
+Accel:     ADXL382-2BCCZ-RL7 (Alex)
 GPS:       L76LM33
-SD:
+SD:                      (Aurelie)
 STM32: STM32F410RBT6
 
 

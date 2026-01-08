@@ -63,7 +63,7 @@ Le module pour plug la carte SD n'est pas encore choisi parcontre la méthode po
 -----
 
 ### Détection d'obstacles et Mappage
-Pour le système de détection d'obstacles le LiDar utilisée est un TF-Luna. Pour pluys d'information sur cette partie du projet checker la conversation Teams. Sam a envoyé un excellent message.
+Pour le système de détection d'obstacles le LiDar utilisée est un TF-Luna. Pour plus d'information sur cette partie du projet checker la conversation Teams. Sam a envoyé un excellent message.
 
 -----
 

@@ -4,12 +4,12 @@ Mettez vos noms à coté des tâches que vous voulez faire!
 
 1. [Programmation](#programmation) 
    1. [Capteurs](#capteurs)
-       1. [Altimètre (Aurelie)](#altimètre)
-       2. [IMU ()](#imu)
+       1. [Altimètre (Aurélie)](#altimètre)
+       2. [IMU (Aurélie)](#imu)
        3. [Capteur Temp (Fernando)](#capteur-temp)
        4. [Acceleromètre (Alex)](#acceleromètre)
        5. [GPS SRAD ()](#gps-srad)
-       6. [Carte SD (Aurelie)](#carte-sd)
+       6. [Carte SD (Aurélie)](#carte-sd)
           
    1. [Détection d'obstacles + Mappage ()](#détection-dobstacles-et-mappage)
    2. [Système de mouvement ()](#système-de-mouvement)

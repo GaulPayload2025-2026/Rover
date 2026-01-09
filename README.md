@@ -11,7 +11,7 @@ Mettez vos noms à coté des tâches que vous voulez faire!
        5. [GPS SRAD ()](#gps-srad)
        6. [Carte SD (Aurélie)](#carte-sd)
           
-   1. [Détection d'obstacles + Mappage ()](#détection-dobstacles-et-mappage)
+   1. [Détection d'obstacles + Mappage (Alex + )](#détection-dobstacles-et-mappage)
    2. [Système de mouvement ()](#système-de-mouvement)
    1. [Flight Modes](#flight-modes)
         1. [Pre Flight ()](#pre-flight)

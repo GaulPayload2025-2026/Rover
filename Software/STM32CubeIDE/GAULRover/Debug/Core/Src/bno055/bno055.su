@@ -1,6 +1,6 @@
-../Core/Src/bno055/bno055.c:47:6:bno055_Init	120	static
-../Core/Src/bno055/bno055.c:68:6:bno055_Task	128	static
-../Core/Src/bno055/bno055.c:86:13:filterData	24	static
-../Core/Src/bno055/bno055.c:111:6:bno055_GetGyro	24	static
-../Core/Src/bno055/bno055.c:118:6:HAL_I2C_MasterRxCpltCallback	16	static
-../Core/Src/bno055/bno055.c:125:6:bno055_SetFilter	16	static
+../Core/Src/bno055/bno055.c:46:6:bno055_Init	120	static
+../Core/Src/bno055/bno055.c:67:6:bno055_Task	128	static
+../Core/Src/bno055/bno055.c:85:6:bno055_GetGyro	24	static
+../Core/Src/bno055/bno055.c:92:6:HAL_I2C_MasterRxCpltCallback	16	static
+../Core/Src/bno055/bno055.c:99:6:bno055_SetFilter	16	static
+../Core/Src/bno055/bno055.c:104:13:filterData	24	static

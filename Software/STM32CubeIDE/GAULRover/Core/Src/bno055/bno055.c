@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_i2c.h"
-//#include "i2c.h"
+#include "map/hardware_map.h"
 
 /* Private defines */
 
@@ -24,7 +24,6 @@
 /* Private typedefs */
 
 /* Private variables */
-I2C_HandleTypeDef bno055_hi2c1;
 float alpha = 0.25;
 float filter_length = 20;
 uint32_t filter_id = FILTER_MOVING_AVG;
@@ -49,27 +48,27 @@ void bno055_Init(void)
 
 	uint8_t RX_Buffer[100] = {};
 	uint8_t reg_config[] = {0x3D, 0x00} ;
-	HAL_I2C_Master_Transmit_DMA(&bno055_hi2c1 , 0x28 << 1, reg_config, 2);
+	HAL_I2C_Master_Transmit_DMA(BNO055_I2C , 0x28 << 1, reg_config, 2);
 	HAL_Delay(1000);
 	uint8_t reg_config_fu[] = {0x3D, 0x0C} ;
-	HAL_I2C_Master_Transmit_DMA(&bno055_hi2c1 , 0x28 << 1, reg_config_fu, 2);
+	HAL_I2C_Master_Transmit_DMA(BNO055_I2C , 0x28 << 1, reg_config_fu, 2);
 	HAL_Delay(1000);
 	//ID
 	uint8_t reg_D = 0x00;
-	HAL_I2C_Master_Transmit_DMA(&bno055_hi2c1 , 0x28 << 1, &reg_D, 1);
+	HAL_I2C_Master_Transmit_DMA(BNO055_I2C , 0x28 << 1, &reg_D, 1);
 
-    HAL_I2C_Master_Receive_DMA(&bno055_hi2c1 , 0x28 << 1, (uint8_t *)RX_Buffer, 1);
+    HAL_I2C_Master_Receive_DMA(BNO055_I2C , 0x28 << 1, (uint8_t *)RX_Buffer, 1);
     HAL_Delay(1000);
 	uint8_t reg_gyro = 0x14;
-	HAL_I2C_Master_Transmit_DMA(&bno055_hi2c1 , 0x28 << 1, &reg_gyro, 1);
-	while (HAL_I2C_GetState(&bno055_hi2c1) != HAL_I2C_STATE_READY);
+	HAL_I2C_Master_Transmit_DMA(BNO055_I2C , 0x28 << 1, &reg_gyro, 1);
+	while (HAL_I2C_GetState(BNO055_I2C) != HAL_I2C_STATE_READY);
 }
 
 void bno055_Task(void)
 {
 	uint8_t RX_Buffer[100] = {};
 
-	HAL_I2C_Master_Receive_DMA(&bno055_hi2c1 , 0x28 << 1, (uint8_t *)RX_Buffer, 8);
+	HAL_I2C_Master_Receive_DMA(BNO055_I2C , 0x28 << 1, (uint8_t *)RX_Buffer, 8);
 
 	while(!i2c_done);
 	i2c_done = 0;
@@ -81,6 +80,25 @@ void bno055_Task(void)
     float gyro_z_new = (float)z / 16.0f;
 
 	filterData(gyro_x_new,gyro_y_new ,gyro_z_new);
+}
+
+void bno055_GetGyro(float *x, float *y, float *z)
+{
+	*x = gyro_x;
+	*y = gyro_y;
+	*z = gyro_z;
+}
+
+void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c)
+{
+    if (hi2c->Instance == I2C1) {
+        i2c_done = 1; // RX finished
+    }
+}
+
+void bno055_SetFilter(uint32_t filt_id)
+{
+	filter_id = filt_id;
 }
 
 static void filterData(float x, float y, float z)
@@ -106,23 +124,4 @@ static void filterData(float x, float y, float z)
 
 	gyro_x = x;
 	gyro_y = y;
-}
-
-void bno055_GetGyro(float *x, float *y, float *z)
-{
-	*x = gyro_x;
-	*y = gyro_y;
-	*z = gyro_z;
-}
-
-void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c)
-{
-    if (hi2c->Instance == I2C1) {
-        i2c_done = 1; // RX finished
-    }
-}
-
-void bno055_SetFilter(uint32_t filt_id)
-{
-	filter_id = filt_id;
 }

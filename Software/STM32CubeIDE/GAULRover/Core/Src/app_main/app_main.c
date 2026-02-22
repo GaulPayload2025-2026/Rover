@@ -7,6 +7,8 @@
 
 /* Private includes */
 
+#include "bno055/bno055.h"
+
 /* Private defines */
 
 /* Private typedefs */
@@ -19,11 +21,11 @@ typedef enum
 	SM_ROVER_POSTFLIGHT,
 	SM_ROVER_IDLE
 }
-eSMRover;
+eSMRover_t;
 
 /* Private variables */
 
-static eSMRover geRoverState = SM_ROVER_INIT;
+static eSMRover_t geRoverState = SM_ROVER_INIT;
 
 /* Private function prototype */
 
@@ -33,7 +35,7 @@ void app_main_Task(void)
 	switch (geRoverState)
 	{
 	    case SM_ROVER_INIT:
-	        // Initialization code
+	        bno055_Init();
 	        break;
 	    case SM_ROVER_PREFLIGHT:
 	        // Preflight code

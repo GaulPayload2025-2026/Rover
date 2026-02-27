@@ -1,0 +1,2 @@
+../Core/Src/console/console.c:33:6:console_Init	1
+../Core/Src/console/console.c:37:6:console_PrintF	3

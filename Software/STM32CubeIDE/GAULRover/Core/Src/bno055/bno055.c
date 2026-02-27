@@ -7,13 +7,10 @@
 
 /* Private includes */
 
-#include <bno055/bno055.h>
-#include <stdint.h>
-#include "stm32f4xx.h"
-#include <stdlib.h>
-#include "stm32f4xx_hal.h"
-#include "stm32f4xx_hal_i2c.h"
+#include "bno055/bno055.h"
 #include "map/hardware_map.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 /* Private defines */
 

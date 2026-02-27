@@ -10,6 +10,7 @@
 
 #include "i2c.h"
 #include "usart.h"
+#include "spi.h"
 
 
 /* -------------------------------------------------------------------------- */
@@ -23,11 +24,16 @@
 
 /* ========================= SPI Devices =================================== */
 
+#define SD_SPI (hspi1)
+
 /* ========================= UART Devices ================================== */
 
-#define TFLUNA_UART (&huart1)
+#define CONSOLE_UART (&huart1)
+#define TFLUNA_UART (&huart2)
 
+/* ========================= GPIO Devices ================================== */
 
-
+#define SD_CS_PIN_GPIO GPIO_PIN_4
+#define SD_CS_PORT_GPIO GPIOC
 
 #endif /* SRC_MAP_HARDWARE_MAP_H_ */

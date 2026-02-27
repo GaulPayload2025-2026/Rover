@@ -24,8 +24,14 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src/app_main \
 Core/Src/bno055 \
+Core/Src/console \
 Core/Src \
+Core/Src/sd \
 Core/Src/tfluna \
 Core/Startup \
 Drivers/STM32F4xx_HAL_Driver/Src \
+FATFS/App \
+FATFS/Target \
+Middlewares/Third_Party/FatFs/src \
+Middlewares/Third_Party/FatFs/src/option \
 

@@ -29,13 +29,14 @@ static eSMRover_t geRoverState = SM_ROVER_INIT;
 
 /* Private function prototype */
 
-
+/* Function definitions */
 void app_main_Task(void)
 {
 	switch (geRoverState)
 	{
 	    case SM_ROVER_INIT:
-	        bno055_Init();
+	        //bno055_Init();
+
 	        break;
 	    case SM_ROVER_PREFLIGHT:
 	        // Preflight code

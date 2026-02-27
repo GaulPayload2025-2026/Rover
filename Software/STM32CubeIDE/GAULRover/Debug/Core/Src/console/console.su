@@ -1,0 +1,2 @@
+../Core/Src/console/console.c:33:6:console_Init	4	static
+../Core/Src/console/console.c:37:6:console_PrintF	36	static

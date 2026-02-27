@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "map/hardware_map.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -63,7 +63,9 @@ void Error_Handler(void);
 #define bno055_I2C1_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+#define SD_CS_Pin SD_CS_PIN_GPIO
+#define SD_CS_GPIO_Port SD_CS_PORT_GPIO
+#define SD_SPI_HANDLE (SD_SPI)
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

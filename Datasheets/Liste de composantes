@@ -4,11 +4,21 @@ Imu:       BNO055
 Temp:      MAX6612MXK (Fernando)
 Accel:     ADXL382-2BCCZ-RL7 (Alex)
 GPS:       L76LM33
-SD:                      (Aurelie)
-STM32:     STM32F410RBT6
+SD:        MEM2067              (Aurelie)
+STM32:     STM32F429VIT6
 Caméra:    RunCam Split 4 V2
 Lidar:     TF-Luna
+LEDS:      LTST-E682KRKGWT
+           150080GS75000
+           150080RS75000
+Bluetooth: HM-11
+Caméra:    RunCam Split4 V2
 
+
+Connecteurs:
+           GT17HN_4DP_2H_A_56  --  A vérifier
+      
+    
 
 BNO055:
   Communication I2C
@@ -39,22 +49,7 @@ SD:
 LiDar:
   1 Uart
 
-
-
-Conclusion: 
-  2 pour I2c
-  2 Pour SPI
-  2 UART
-  20 pins minimales + des PWM pour les moteurs + LEDS!
-
-  
-
-
 GPS COTS apart
-
-Les batteries d'avionique 7.4 == buck converter pour 3.3 V pour le stm32 et les composantes branchées au stm32. Les datasheets on des
-capacités de decouplage. (Lors de deconnection pas de surtension, stabiliser la source)
-3.3 Va necessaire aussi (circuit)
 
 
 

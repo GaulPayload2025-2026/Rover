@@ -17,7 +17,13 @@ Caméra:    RunCam Split4 V2
 
 Connecteurs:
            GT17HN_4DP_2H_A_56  --  A vérifier
-      
+
+Moteurs (À choisir):
+
+Requirements: idealment (2 kg*cm) max 37 mm de hauteur (base jusqu'au shaft)
+- [Yosoo Mini moteur de réduction de vitesse DC 6 V 300](https://www.amazon.ca/gp/aw/d/B01BBSXDJ4/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=3cff89105d1121cca284e990307a3fc2&hsa_cr_id=7133947120701&qid=1773081487&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=s4qv6&content-id=amzn1.sym.e7747c12-515e-47d2-953b-5a9e3873d403%3Aamzn1.sym.e7747c12-515e-47d2-953b-5a9e3873d403&pf_rd_p=e7747c12-515e-47d2-953b-5a9e3873d403&pf_rd_r=G8D47M54XEAM1H9CE2XN&pd_rd_wg=ZgPf7&pd_rd_r=9f83d77e-77e2-4ddf-b34e-e6c71c350d67)
+- [Pololu 100:1 Micro Metal Gearmotor HP 6V](https://www.pololu.com/product/1101/specs)
+- Checker à nouveau sur digikey
     
 
 BNO055:
